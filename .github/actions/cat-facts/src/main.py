@@ -31,6 +31,6 @@ import sys
 chuck_url = "https://api.chucknorris.io/jokes/random"
 r = requests.get(chuck_url)
 json_obj = r.json()
-fact = json_obj[value]
+fact = json_obj["value"]
 print(fact)
 print(f"::set-output name=fact::{fact}")
